@@ -8,9 +8,11 @@ Everything here must be prefixed with the disclaimer that this code is VERY simp
 This should run on a base installation of Conda. However, at the time of writing, Tensorflow was having some kind of integration issue with the new 50-series GPUs. There are 2 options to deal with this:
 
 **Option 1 - probably best for those stumbling across this from youtube and with less experience of data science**
+
 The train_cnn script has a line near the top to disable the GPU. Just uncomment that line and run. It will take longer to train but should work
 
 **Option 2 - Use Nvidia's official docker container to run the code**
+
 This is what I ended up doing. The instructions to pull and run the container are [here] (https://docs.nvidia.com/deeplearning/frameworks/tensorflow-release-notes/running.html)
 
 I ended up putting all the necessary training data in a single folder (called 'M15-CNN') and mounting that to the container. So, to run it, I'd use the following command. The training script could then be run as normal. The resulting model was copied back to the host machine.
