@@ -2,7 +2,7 @@
 
 This is the code featured in [this video] (https://www.youtube.com/watch?v=T3IwER3yXs4&t=585s)
 
-[About the limit of my blender abilities](https://github.com/lambdaBoost/Ophanim/blob/main/docs/ophanim.png)
+![About the limit of my blender abilities](https://github.com/lambdaBoost/Ophanim/blob/main/docs/ophanim.png )
 
 Everything here must be prefixed with the disclaimer that this code is VERY simple for a neural net. There is nothing fancy like MLFlow integration, feature engineering pipelines or advanced model tuning. It was written over the course of a couple of evenings with the sole purpose of finding some aircraft. The model returns many false positives, and with a little extra work, it would be made much more accurate.
 
