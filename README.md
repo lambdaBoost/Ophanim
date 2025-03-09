@@ -23,7 +23,6 @@ I ended up putting all the necessary training data in a single folder (called 'M
 sudo docker run --gpus all -ti --rm -v ./M15-CNN:/M15-CNN--ipc=host --ulimit memlock=-1 --ulimit stack=67108864 nvcr.io/nvidia/tensorflow:25.01-tf2-py3
 ```
 
-To fix this, I ended up carrying all the training runs out  
 
 ## Building a dataset
 Bear in mind, this repo is basically just a few scripts. You just need to run them in the correct order and edit the global variables at the top.
@@ -48,7 +47,7 @@ I ended up training seperate models for Ukraione and North CAucus. Even then, I 
 
 The images identified as positive will be copied to the folder specified in the DEST variable at the top of the script. I just stuck the X-Y coordinates (well, actually the coordinates divided by 64.....let's not get into it) of each image slice from the 'big image' in the filename so you can find where it came from. A janky solution but it worked well enough for my purposes.
 
-I ended up with about 3000 falkse positives from a dataset of 25 million images. Again, for the purpose of my video, that was completely fine. Just don't go using this for anything serious I guess.
+I ended up with about 3000 false positives from a dataset of 25 million images. Again, for the purpose of my video, that was completely fine. Just don't go using this for anything serious I guess.
 
 ## Final thoughts and improvements
 As I said, this isn't anything fancy but it works. If you wanted to use this for something more serious and persistent it should probably be packaged into a proper library and run in conjunction with MLFlow for proper model versioning etc. I do enough of that for my day job, I'm not doing it here.
