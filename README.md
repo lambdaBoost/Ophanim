@@ -25,6 +25,8 @@ sudo docker run --gpus all -ti --rm -v ./M15-CNN:/M15-CNN--ipc=host --ulimit mem
 
 
 ## Building a dataset
+The image dataset used for the video was from the [USGS EarthExplorer service](https://earthexplorer.usgs.gov/). I used a tiny fraction of what they have availabel. You could go pretty crazy with this data - it is an excellent resource 
+
 Bear in mind, this repo is basically just a few scripts. You just need to run them in the correct order and edit the global variables at the top.
 
 There are 2 scripts to build a dataset:
