@@ -50,7 +50,9 @@ The images identified as positive will be copied to the folder specified in the 
 I ended up with about 3000 false positives from a dataset of 25 million images. Again, for the purpose of my video, that was completely fine. Just don't go using this for anything serious I guess.
 
 ## Final thoughts and improvements
-As I said, this isn't anything fancy but it works. If you wanted to use this for something more serious and persistent it should probably be packaged into a proper library and run in conjunction with MLFlow for proper model versioning etc. I do enough of that for my day job, I'm not doing it here.
+As I said, this isn't anything fancy but it works. If you wanted to use this for something more serious and persistent it should probably be packaged into a proper library and run via github actions. Of course that is uneccessary for just using this for a bit of fun on your own PC, which is what I used it for.
+
+For anything serious, it would also be run in conjunction with MLFlow for proper model versioning etc. I do enough of that for my day job, I'm not doing it here.
 
 As for the model itself, there are endless things we could do to improve it. Improved preprocessing of the images would be the first step. A greater variation of templates and maybe some feature extraction would be the first thing I'd do. The actual model is a very simple CNN...I'm not sure a more complex onw would actually help that much but it might. I've had good success with U-nets for this kind of thing before. Of you could try something that isn't a neural net at all but be warned...it may take ages to train.
 
